@@ -16,3 +16,10 @@ if (arr[i] < min) {
 min = arr[i];
 }
 }
+
+//Hello Name!
+function greetings(name){
+if (name) return `Hello ${name}!`;
+else return 'Hello!';
+}
+
