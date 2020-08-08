@@ -1,0 +1,9 @@
+//Дан массив слов. Найдите количество слов длиной 5.
+
+const arr = ['solar', 'constellation', 'launch', 'Nebula'];
+let wordsOf5Letters = 0;
+for (let i = 0; i < arr.length; i++) {
+if (arr[i].length > 5) {
+wordsOf5Letters++;
+}
+}
