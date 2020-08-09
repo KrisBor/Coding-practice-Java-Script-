@@ -28,3 +28,8 @@ else return 'Hello!';
 function perimeterOfTriangle(a, b, c){
 return (a < b + c && b < a + c && c < a + b) ? a + b + c : 'The triangle does not exist';
 }
+
+function areaOfTriangle(a, b, c){
+let p = (a + b + c) / 2;
+return (a < b + c && b < a + c && c < a + b) ? (p * (p - a) * (p - b) * (p - c)) ** 0.5 : 'The triangle does not exist';
+}
