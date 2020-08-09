@@ -61,3 +61,11 @@ function fillArray(n){
 }
   return result;
 }
+//Заполнить массив числами от n до m.
+function fillArray(n, m){
+const result = [];
+for (let i = 0; i < 1 + m - n; i++) {
+result.push(n + i);
+}
+return result;
+}
