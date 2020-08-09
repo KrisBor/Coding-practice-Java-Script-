@@ -1,5 +1,4 @@
 //Дан массив слов. Найдите количество слов длиной 5.
-
 const arr = ['solar', 'constellation', 'launch', 'Nebula'];
 let wordsOf5Letters = 0;
 for (let i = 0; i < arr.length; i++) {
@@ -23,3 +22,7 @@ if (name) return `Hello ${name}!`;
 else return 'Hello!';
 }
 
+//Периметр треугольника
+function perimeterOfTriangle(a, b, c){
+return (a < b + c && b < a + c && c < a + b) ? a + b + c : 'The triangle does not exist';
+}
