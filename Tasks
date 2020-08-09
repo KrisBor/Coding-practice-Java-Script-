@@ -3,41 +3,61 @@
 const arr = ['solar', 'constellation', 'launch', 'Nebula'];
 let wordsOf5Letters = 0;
 for (let i = 0; i < arr.length; i++) {
-if (arr[i].length === 5) {
-wordsOf5Letters++;
-}
+  if (arr[i].length === 5) {
+    wordsOf5Letters++;
+  }
 }
 //Найти минимальное значение в массиве.
 const arr = [57, 89, -12, 73, -99, 4, 0];
 let min = arr[0];
 for (let i = 0; i < arr.length; i++) {
-if (arr[i] < min) {
-min = arr[i];
-}
+  if (arr[i] < min) {
+    min = arr[i];
+  }
 }
 
 //20200809
 //Hello Name!
 function greetings(name){
-if (name) return `Hello ${name}!`;
-else return 'Hello!';
+  if (name) return `Hello ${name}!`;
+  else return 'Hello!';
 }
 //Периметр треугольника
 function perimeterOfTriangle(a, b, c){
-return (a < b + c && b < a + c && c < a + b) ? a + b + c : 'The triangle does not exist';
+  return (a < b + c && b < a + c && c < a + b) ? a + b + c : 'The triangle does not exist';
 }
 //Площадь треугольника
 function areaOfTriangle(a, b, c){
-let p = (a + b + c) / 2;
-return (a < b + c && b < a + c && c < a + b) ? (p * (p - a) * (p - b) * (p - c)) ** 0.5 : 'The triangle does not exist';
+  let p = (a + b + c) / 2;
+  return (a < b + c && b < a + c && c < a + b) ? (p * (p - a) * (p - b) * (p - c)) ** 0.5 : 'The triangle does not exist';
 }
 //Последняя цифра числа
 function lastDigit(number){
-return number % 10;
+  return number % 10;
 }
 //Факториал числа
 function factorial(number){
-if (number === 0) return 1;
-else if (number < 0) return 0;
-else return number * factorial(number - 1);
+  if (number === 0) return 1;
+  else if (number < 0) return 0;
+  else return number * factorial(number - 1);
+}
+//Сумма чисел от 1 до n.
+function sum(n){
+  if (n === 0) return 0;
+  else if (n === 1) return 1;
+  else return n + sum(n - 1);
+}
+//Большее из трех чисел
+function max(x, y, z){
+  if (x > y && x > z) return x;
+  else if (y > x && y > z) return y;
+  else return z;
+}
+//Заполнить массив числами от 1 до n.
+function fillArray(n){
+  const result = [];
+  for (let i = 0; i < n; i++) {
+    result.unshift(n - i);
+}
+  return result;
 }
