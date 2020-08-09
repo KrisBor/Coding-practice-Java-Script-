@@ -1,3 +1,4 @@
+//20200808
 //Дан массив слов. Найдите количество слов длиной 5.
 const arr = ['solar', 'constellation', 'launch', 'Nebula'];
 let wordsOf5Letters = 0;
@@ -16,6 +17,7 @@ min = arr[i];
 }
 }
 
+//20200809
 //Hello Name!
 function greetings(name){
 if (name) return `Hello ${name}!`;
