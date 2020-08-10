@@ -98,3 +98,11 @@ else if (number > 0 && number % 2 !== 0) return 'Odd positive number';
 else if (number < 0 && number % 2 !== 0) return 'Odd negative number';
 else return 'Zero';
 }
+//Сумма элементов массива
+function sumOfArray(arr){
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    sum = sum + arr[i];
+  }
+  return sum;
+}
