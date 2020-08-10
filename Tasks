@@ -90,3 +90,11 @@ function numberOfDigits(number){
   }
   return count
 }
+//Описание числа
+function describesNumber(number){
+if (number > 0 && number % 2 === 0) return 'Even positive number';
+else if (number < 0 && number % 2 === 0) return 'Even negative number';
+else if (number > 0 && number % 2 !== 0) return 'Odd positive number';
+else if (number < 0 && number % 2 !== 0) return 'Odd negative number';
+else return 'Zero';
+}
