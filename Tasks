@@ -1,4 +1,4 @@
-//20200808
+//////////////////////////////////////////////////////20200808/////////////////////////////////////////////////////////
 //Дан массив слов. Найдите количество слов длиной 5.
 const arr = ['solar', 'constellation', 'launch', 'Nebula'];
 let wordsOf5Letters = 0;
@@ -15,8 +15,7 @@ for (let i = 0; i < arr.length; i++) {
     min = arr[i];
   }
 }
-
-//20200809
+//////////////////////////////////////////////////////20200809/////////////////////////////////////////////////////////
 //Hello Name!
 function greetings(name){
   if (name) return `Hello ${name}!`;
@@ -70,7 +69,7 @@ result.push(n + i);
 return result;
 }
 
-//20200810
+//////////////////////////////////////////////////////20200810/////////////////////////////////////////////////////////
 //Заполнить массив четными числами от 2 до n.
 function fillArray(n){
   const result = [];
@@ -121,6 +120,7 @@ function productOfArray(arr){
   } while (i < arr.length)
   return product;
 }
+//////////////////////////////////////////////////////20200811/////////////////////////////////////////////////////////
 //Среднее арифметическое элементов массива
 function average(arr){
   let sum = 0;
@@ -137,3 +137,44 @@ function average(arr){
   } while (i < arr.length);
   return avg
 }
+//Сумма положительных элементов массива
+function sumOfPositive(arr){
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > 0) {
+      sum = sum + arr[i];
+    }
+  }
+  return sum;
+}
+//Сумма отрицательных элементов массива
+function sumOfNegative(arr){
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] < 0) {
+      sum = sum + (arr[i]);
+    }
+  }
+  return sum;
+}
+//Количество положительных элементов массива
+function countOfPositive(arr){
+  let count = 0;
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > 0) {
+      count++;
+    }
+  }
+  return count;
+}
+//Количество отрицательных элементов массива
+function countOfNegative(arr){
+  let count = 0;
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] < 0) {
+      count++;
+    }
+  }
+  return count;
+}
+//
