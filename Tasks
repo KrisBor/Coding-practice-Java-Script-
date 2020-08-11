@@ -121,17 +121,19 @@ function productOfArray(arr){
   } while (i < arr.length)
   return product;
 }
-//Среднее арифметическое элементов массива ?????????????????????????????? доделать
+//Среднее арифметическое элементов массива
 function average(arr){
+  let sum = 0;
   let avg = 0;
   let i = 0;
   do {
     if (arr.length !== 0) {
-      avg = avg + arr[i] / arr.length;
+      sum = sum + arr[i];
+      avg = sum / arr.length;
     }
     else {
       avg = 0;
     } i++;
   } while (i < arr.length);
-  return avg;
+  return avg
 }
