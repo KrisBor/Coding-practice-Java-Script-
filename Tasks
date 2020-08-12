@@ -177,4 +177,15 @@ function countOfNegative(arr){
   }
   return count;
 }
-//
+//////////////////////////////////////////////////////20200812/////////////////////////////////////////////////////////
+//Индекс первого отрицательного элемента массива
+function indexOfFirstNegative(arr){
+  let noNegative = 'no negative elements';
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] < 0) {
+      noNegative = i;
+      break;
+    }
+  }
+  return noNegative;
+}
