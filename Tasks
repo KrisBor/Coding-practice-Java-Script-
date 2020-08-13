@@ -189,3 +189,24 @@ function indexOfFirstNegative(arr){
   }
   return noNegative;
 }
+//////////////////////////////////////////////////////20200813/////////////////////////////////////////////////////////
+//Количество чисел в смешанном массиве
+function countOfNumbers(arr){
+let count = 0;
+for (let i = 0; i < arr.length; i++) {
+if (arr[i] / 1 === arr[i]) {
+count++;
+}
+}
+return count;
+}
+//Количество слов, состоящих из 5 букв.
+function countOfWordsOf5Letters(arr){
+  let count = 0;
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i].length === 5) {
+      count++;
+}
+}
+  return count;
+}
