@@ -210,3 +210,10 @@ function countOfWordsOf5Letters(arr){
 }
   return count;
 }
+
+//////////////////////////////////////////////////////20200815/////////////////////////////////////////////////////////
+//Напишите функцию, которая выводит в консоль песню Happy birthday!
+function happyBirthday(name){
+let str = 'Happy birthday to you';
+return str + '\n' + str + '\n' + `Happy birthday dear ${name}` + '\n' + str + '.';
+}
