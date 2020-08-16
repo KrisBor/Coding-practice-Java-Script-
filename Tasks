@@ -192,12 +192,12 @@ function indexOfFirstNegative(arr){
 //////////////////////////////////////////////////////20200813/////////////////////////////////////////////////////////
 //Количество чисел в смешанном массиве
 function countOfNumbers(arr){
-let count = 0;
-for (let i = 0; i < arr.length; i++) {
-if (arr[i] / 1 === arr[i]) {
-count++;
-}
-}
+  let count = 0;
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] / 1 === arr[i]) {
+    count++;
+    }
+  }
 return count;
 }
 //Количество слов, состоящих из 5 букв.
@@ -206,23 +206,27 @@ function countOfWordsOf5Letters(arr){
   for (let i = 0; i < arr.length; i++) {
     if (arr[i].length === 5) {
       count++;
-}
-}
+    }
+  }
   return count;
 }
 
 //////////////////////////////////////////////////////20200815/////////////////////////////////////////////////////////
 //Напишите функцию, которая выводит в консоль песню Happy birthday!
 function happyBirthday(name){
-let str = 'Happy birthday to you';
-return str + '\n' + str + '\n' + `Happy birthday dear ${name}` + '\n' + str + '.';
+  let str = 'Happy birthday to you';
+  return str + '\n' + str + '\n' + `Happy birthday dear ${name}` + '\n' + str + '.';
 }
 //////////////////////////////////////////////////////20200816/////////////////////////////////////////////////////////
 //Обмен значений переменных
 function changeValues(a, b){
-let temp = a;
-a = b;
-b = temp;
+  let temp = a;
+  a = b;
+  b = temp;
   return [a, b];
 }
-console.log(changeValues(10, 20));
+//Решение линейного уравнения ax + b = 0
+function equation(a, b){
+let x = b / a;
+return -x;
+}
