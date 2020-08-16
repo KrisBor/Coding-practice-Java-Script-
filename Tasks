@@ -211,9 +211,17 @@ function countOfWordsOf5Letters(arr){
   return count;
 }
 
-//////////////////////////////////////////////////////20200815/////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////20200816/////////////////////////////////////////////////////////
 //Напишите функцию, которая выводит в консоль песню Happy birthday!
 function happyBirthday(name){
 let str = 'Happy birthday to you';
 return str + '\n' + str + '\n' + `Happy birthday dear ${name}` + '\n' + str + '.';
 }
+//Обмен значений переменных
+function changeValues(a, b){
+let temp = a;
+a = b;
+b = temp;
+  return [a, b];
+}
+console.log(changeValues(10, 20));
