@@ -22,4 +22,8 @@ function slope(points){
 function past(h, m, s){
   return (h * 3600 + m * 60 + s) * 1000;
 }
+//https://www.codewars.com/kata/5a03b3f6a1c9040084001765
+function angle(n) {
+  return 2 * 90 * (n - 2);
+}
 
