@@ -26,4 +26,10 @@ function past(h, m, s){
 function angle(n) {
   return 2 * 90 * (n - 2);
 }
-
+//////////////////////////////////////////////////////20200818/////////////////////////////////////////////////////////
+//https://www.codewars.com/kata/588417e576933b0ec9000045
+function seatsInTheater(nCols, nRows, col, row) {
+  let numberCol = nCols - col + 1;
+  let numberRow = nRows - row;
+  return numberCol * numberRow;
+}
