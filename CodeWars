@@ -33,3 +33,9 @@ function seatsInTheater(nCols, nRows, col, row) {
   let numberRow = nRows - row;
   return numberCol * numberRow;
 }
+//https://www.codewars.com/kata/589478160c0f8a40870000bc
+function arrowArea(a,b) {
+  let diagonal = ((a ** 2 + b ** 2) ** 0.5) / 2;
+  let h = b / 2;
+  return 0.5 * a * h;
+}
