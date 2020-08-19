@@ -230,3 +230,9 @@ function equation(a, b){
 let x = b / a;
 return -x;
 }
+//////////////////////////////////////////////////////20200819/////////////////////////////////////////////////////////
+//Если аргумент является числом, увеличить его на 1
+function numbersIncrement(value){
+  if (typeof value === 'number') return ++value;
+  else return 'It is not a number';
+}
