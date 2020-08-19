@@ -236,3 +236,8 @@ function numbersIncrement(value){
   if (typeof value === 'number') return ++value;
   else return 'It is not a number';
 }
+//Есть ли среди аргументов строки?
+function isThereAString(value1, value2){
+  if (typeof value1 === 'string' || typeof value2 === 'string') return 'String received';
+  else return 'There are no strings';
+}
