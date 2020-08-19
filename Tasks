@@ -241,3 +241,9 @@ function isThereAString(value1, value2){
   if (typeof value1 === 'string' || typeof value2 === 'string') return 'String received';
   else return 'There are no strings';
 }
+//Перевод логического значения на английский язык
+function booleanTranslate(value){
+  if (typeof value === 'boolean' && value === true) return 'Truth';
+  else if (typeof value === 'boolean' && value === false) return 'Lie';
+  else return 'Not a boolean value';
+}
