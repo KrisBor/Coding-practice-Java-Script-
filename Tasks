@@ -247,9 +247,20 @@ function booleanTranslate(value){
   else if (typeof value === 'boolean' && value === false) return 'Lie';
   else return 'Not a boolean value';
 }
+//////////////////////////////////////////////////////20200823/////////////////////////////////////////////////////////
 // Типы данных. Если число, то умножить на 2, если строка, то вернуть значение + ! знак.
 function bugsFixing(value) {
-if (typeof value === 'number') return value * 2;
-else if (typeof(value) === 'string') return `${value}!`;
-else return 'Wrong value';
+  if (typeof value === 'number') return value * 2;
+  else if (typeof(value) === 'string') return `${value}!`;
+  else return 'Wrong value';
+}
+//Сколько чисел содержит массив?
+function countNumbers(arr){
+let count = 0;
+  for (let elm of arr) {
+    if (typeof elm === 'number') {
+    count++;
+    }
+  }
+return count;
 }
