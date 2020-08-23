@@ -247,3 +247,9 @@ function booleanTranslate(value){
   else if (typeof value === 'boolean' && value === false) return 'Lie';
   else return 'Not a boolean value';
 }
+// Типы данных. Если число, то умножить на 2, если строка, то вернуть значение + ! знак.
+function bugsFixing(value) {
+if (typeof value === 'number') return value * 2;
+else if (typeof(value) === 'string') return `${value}!`;
+else return 'Wrong value';
+}

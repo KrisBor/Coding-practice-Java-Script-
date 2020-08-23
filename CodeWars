@@ -49,3 +49,4 @@ function myFirstKata(a, b) {
   if (typeof(a) !== 'number' || typeof(b) !== 'number') return false;
   else return a % b + b % a;
 }
+//https://www.codewars.com/kata/5a2e9ae2b6cfd7692a0000ba
