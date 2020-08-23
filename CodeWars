@@ -54,7 +54,6 @@ function typeOfSum(a, b) {
   let sum = a + b;
   return typeof sum;
 }
-
 //https://www.codewars.com/kata/53934feec44762736c00044b
 var a = 123;
 a = a.toString();
