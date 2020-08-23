@@ -269,3 +269,15 @@ function arithmeticExpression(a, b){
   let c = a + b;
   return a + ' + ' + b + ' = ' + c;
 }
+//Сумма строк как сумма чисел
+function sumOfStr(a, b){
+let c = +a + +b;
+return String(c);
+}
+function sumOfStr(a, b){
+return String(+a + +b);
+}
+//Сумма трех булевых величин, возвратить строку.
+function sumOfBoolean(a, b, c){
+  return String(Boolean(+a) + Boolean(+b) + Boolean(+c));
+}
