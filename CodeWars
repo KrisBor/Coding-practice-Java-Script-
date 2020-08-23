@@ -39,3 +39,8 @@ function arrowArea(a,b) {
   let h = b / 2;
   return 0.5 * a * h;
 }
+//////////////////////////////////////////////////////20200823/////////////////////////////////////////////////////////
+//https://www.codewars.com/kata/55a5bfaa756cfede78000026
+function problem(x){
+  return (typeof x === 'number') ? x * 50 + 6 : 'Error';
+}
