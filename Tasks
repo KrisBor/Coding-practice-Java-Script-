@@ -286,4 +286,13 @@ function sumOfBoolean(a, b, c){
 function average(a, b){
   return ((a + b) / 2).toFixed(2);
 }
+//Площадь закрашенной фигуры. Требуется найти площадь фигуры,
+//которая представляет собой квадрат со стороной a, в котором вырезано квадратное отверстие со стороной b (a > b).
+function area(a, b){
+  let squareBig = Math.pow(a, 2);
+  let squareSmall = Math.pow(b, 2);
+  return squareBig - squareSmall;
+}
 //
+
+
