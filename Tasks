@@ -301,3 +301,8 @@ function circleArea(r){
 function circleLength(d){
   return (Math.PI * d).toFixed(2);
 }
+//Даны два числа. Найдите сумму, разность, произведение и частное их квадратов в виде массива из четырех значений.
+function squareOperations(a, b){
+  return [Math.pow(a, 2) + Math.pow(b, 2), Math.pow(a, 2) - Math.pow(b, 2), Math.pow(a, 2) * Math.pow(b, 2),
+  Math.round(Math.pow(a, 2) / Math.pow(b, 2))];
+}
