@@ -297,3 +297,7 @@ function area(a, b){
 function circleArea(r){
   return Math.round(Math.PI * Math.pow(r, 2));
 }
+//Длина окружности, d - диаметр окружности
+function circleLength(d){
+  return (Math.PI * d).toFixed(2);
+}
