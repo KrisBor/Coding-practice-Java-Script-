@@ -311,3 +311,7 @@ function absoluteValuesOperations(a, b){
   return [Math.abs(a) + Math.abs(b), Math.abs(a) - Math.abs(b), Math.abs(a) * Math.abs(b),
   Math.round(Math.abs(a) / Math.abs(b))];
 }
+//Гипотенуза прямоугольного треугольника. Значение гипотенузы округлите вверх до ближайшего большего целого.
+function hypotenuse(a, b){
+  return Math.ceil(Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2)));
+}
