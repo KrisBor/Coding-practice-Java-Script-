@@ -281,3 +281,9 @@ return String(+a + +b);
 function sumOfBoolean(a, b, c){
   return String(Boolean(+a) + Boolean(+b) + Boolean(+c));
 }
+//////////////////////////////////////////////////////20200823/////////////////////////////////////////////////////////
+//Среднее арифметическое двух чисел, округленное до 2-х знаков.
+function average(a, b){
+  return ((a + b) / 2).toFixed(2);
+}
+//
