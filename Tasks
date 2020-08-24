@@ -315,3 +315,7 @@ function absoluteValuesOperations(a, b){
 function hypotenuse(a, b){
   return Math.ceil(Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2)));
 }
+//Площадь кольца, ограниченного двумя окружностями
+function ringArea(r1, r2){
+  return Math.floor((Math.PI * Math.pow(r1, 2)) - (Math.PI * Math.pow(r2, 2)));
+}
