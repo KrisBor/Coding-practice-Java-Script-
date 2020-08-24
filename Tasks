@@ -293,6 +293,7 @@ function area(a, b){
   let squareSmall = Math.pow(b, 2);
   return squareBig - squareSmall;
 }
-//
-
-
+//Площадь круга
+function circleArea(r){
+  return Math.round(Math.PI * Math.pow(r, 2));
+}
