@@ -331,3 +331,7 @@ function rectangle(x1, y1, x2, y2){
  let b = Math.abs(x2 - x1);
  return [2 * a + 2 * b, a * b];
 }
+//Угол в радианной мере.
+function angleInRadians(angle){
+  return Math.round(angle * Math.PI / 180);
+}
