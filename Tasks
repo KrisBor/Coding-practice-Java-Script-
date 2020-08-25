@@ -335,3 +335,7 @@ function rectangle(x1, y1, x2, y2){
 function angleInRadians(angle){
   return Math.round(angle * Math.PI / 180);
 }
+//Стоимость бензина, округленную до двух десятичных знаков, в виде числа.
+function fuelPrice(litres, pricePerLitre){
+  return Number((litres * pricePerLitre).toFixed(2));
+}
