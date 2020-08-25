@@ -325,3 +325,9 @@ function circleArea(circleLength){
   let r = circleLength / (2 * Math.PI);
   return Math.round(Math.PI * Math.pow(r, 2));
 }
+//Стороны прямоугольника параллельны координатным осям. Найдите периметр и площадь прямоугольника.
+function rectangle(x1, y1, x2, y2){
+ let a = Math.abs(y2 - y1);
+ let b = Math.abs(x2 - x1);
+ return [2 * a + 2 * b, a * b];
+}
