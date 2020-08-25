@@ -339,3 +339,7 @@ function angleInRadians(angle){
 function fuelPrice(litres, pricePerLitre){
   return Number((litres * pricePerLitre).toFixed(2));
 }
+//Стоимость заказа в ресторане. Результат округлите до двух десятичных знаков.
+function totalPrice(price, tipPercent, taxPercent){
+  return +(price + (price * tipPercent / 100) + (price * taxPercent / 100)).toFixed(2)
+}
