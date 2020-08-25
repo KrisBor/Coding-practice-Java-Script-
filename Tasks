@@ -319,3 +319,9 @@ function hypotenuse(a, b){
 function ringArea(r1, r2){
   return Math.floor((Math.PI * Math.pow(r1, 2)) - (Math.PI * Math.pow(r2, 2)));
 }
+//////////////////////////////////////////////////////20200825/////////////////////////////////////////////////////////
+//Найдите площадь круга, если известна длина окружности, результат округлите.
+function circleArea(circleLength){
+  let r = circleLength / (2 * Math.PI);
+  return Math.round(Math.PI * Math.pow(r, 2));
+}
