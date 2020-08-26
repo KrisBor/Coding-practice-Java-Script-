@@ -66,3 +66,11 @@ function booleanToString(b){
 function discoverOriginalPrice(discountedPrice, salePercentage){
   return +(discountedPrice * 100 / (100 - salePercentage)).toFixed(2)
 }
+//////////////////////////////////////////////////////20200826/////////////////////////////////////////////////////////
+//https://www.codewars.com/kata/5748838ce2fab90b86001b1a
+function squareArea(A){
+  let circleLength = A * 4;
+  let radius = circleLength / (2 * Math.PI);
+  return +(Math.pow(radius, 2)).toFixed(2);
+}
+//
