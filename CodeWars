@@ -77,3 +77,8 @@ function squareArea(A){
 function oddCount(n){
   return Math.round((n - 1) / 2);
 }
+//////////////////////////////////////////////////////20200827/////////////////////////////////////////////////////////
+//https://www.codewars.com/kata/5a3fe3dde1ce0e8ed6000097
+function century(year) {
+  return Math.ceil(year / 100);
+}
