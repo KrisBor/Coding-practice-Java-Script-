@@ -87,3 +87,9 @@ function century(year) {
 const closestMultiple10 = num => {
   return Math.round(num / 10) * 10;
 };
+//////////////////////////////////////////////////////20200830/////////////////////////////////////////////////////////
+//https://www.codewars.com/kata/571f832f07363d295d001ba8
+function trueOrFalse(val){
+  if (Boolean(val) === false) return false + '';
+  else return true + '';
+}
