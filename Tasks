@@ -356,3 +356,9 @@ function areDigitsInAscendingOrder(num){
   if (num[0] < num[1] && num[0] < num[2] && num[1] < num[2]) return true;
   else return false;
 }
+//Является ли трехзначное число палиндромом?
+function isPalindrome(num){
+  num = String(num)
+  if (num[0] + num[1] === num[2] + num[1]) return 'palindrome';
+  else return 'not a palindrome';
+}
