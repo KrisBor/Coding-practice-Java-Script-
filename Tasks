@@ -350,3 +350,9 @@ function areAllDigitsDifferent(num){
   if (num[0] !== num[1] && num[1] !== num[2] && num[2] !== num[0]) return true;
   else return false;
 }
+//Проверьте истинность утверждения "Все цифры трехзначного числа упорядочены по возрастанию".
+function areDigitsInAscendingOrder(num){
+  num = num + '';
+  if (num[0] < num[1] && num[0] < num[2] && num[1] < num[2]) return true;
+  else return false;
+}
