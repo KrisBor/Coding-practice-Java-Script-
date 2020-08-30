@@ -93,3 +93,15 @@ function trueOrFalse(val){
   if (Boolean(val) === false) return false + '';
   else return true + '';
 }
+//https://www.codewars.com/kata/57f6ecdfcca6e045d2001207
+function add(a, b){
+  if (+a === +b) return true;
+  else return false;
+}
+//https://www.codewars.com/kata/59ca8246d751df55cc00014c
+function hero(bullets, dragons){
+  if (bullets >= dragons * 2) return true;
+  else return false;
+}
+//
+
