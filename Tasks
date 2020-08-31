@@ -374,3 +374,20 @@ function countOfPositive(a, b, c){
   }
   return count;
 }
+//Количество положительных и количество отрицательных чисел в наборе
+function countOfPosAndNeg(a, b, c){
+  let arr = [a, b, c];
+  let countPos = 0;
+  let countNeg = 0;
+  for (let i = 0; i < arr.length; i++){
+    if (arr[i] > 0) {
+    countPos++;
+    }
+  }
+  for (let j = 0; j < arr.length; j++){
+    if (arr[j] < 0){
+      countNeg++;
+    }
+  }
+  return [countPos, countNeg];
+}
