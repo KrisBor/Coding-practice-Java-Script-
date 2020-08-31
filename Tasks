@@ -362,3 +362,15 @@ function isPalindrome(num){
   if (num[0] + num[1] === num[2] + num[1]) return 'palindrome';
   else return 'not a palindrome';
 }
+//////////////////////////////////////////////////////20200831/////////////////////////////////////////////////////////
+//Количество положительных чисел в наборе
+function countOfPositive(a, b, c){
+  let arr = [a, b, c];
+  let count = 0;
+  for (let i = 0; i < arr.length; i++){
+    if (arr[i] > 0) {
+      count++;
+    }
+  }
+  return count;
+}
