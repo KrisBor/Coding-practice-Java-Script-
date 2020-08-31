@@ -391,3 +391,9 @@ function countOfPosAndNeg(a, b, c){
   }
   return [countPos, countNeg];
 }
+//Большее из двух чисел
+function largerOfTwo(a, b){
+  if (a > b) return a;
+  if (b > a) return b;
+  else return a;
+}
