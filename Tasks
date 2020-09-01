@@ -402,3 +402,13 @@ function largerOfTwo(a, b){
 function minOfThree(a, b, c){
   return Math.min(a, b, c);
 }
+//Не самое большое и не самое маленькое число
+function middleOfThree(a, b, c){
+  let arr = [a, b, c];
+  let min = Math.min(...arr);
+  let max = Math.max(...arr);
+  for (let elm of arr) {
+    if (elm > min && elm < max) return elm;
+  }
+}
+//
