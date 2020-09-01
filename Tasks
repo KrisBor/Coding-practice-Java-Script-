@@ -397,3 +397,8 @@ function largerOfTwo(a, b){
   if (b > a) return b;
   else return a;
 }
+//////////////////////////////////////////////////////20200901/////////////////////////////////////////////////////////
+//Меньшее из трех чисел
+function minOfThree(a, b, c){
+  return Math.min(a, b, c);
+}
