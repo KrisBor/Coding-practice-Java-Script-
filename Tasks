@@ -445,3 +445,10 @@ function sumOfTwoLargest(a, b, c){
   }
   return arrSum[0] + arrSum[1];
 }
+//Если величины расположены в порядке возрастания, удвойте каждую величину,
+//иначе присвойте каждой величине противоположное значение.
+function newValues(a, b, c){
+  if (b > a  && c > b) return [a * 2, b * 2, c * 2];
+  else return [-a, -b, -c];
+}
+//
