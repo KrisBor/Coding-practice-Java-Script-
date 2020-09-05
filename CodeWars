@@ -103,5 +103,14 @@ function hero(bullets, dragons){
   if (bullets >= dragons * 2) return true;
   else return false;
 }
-//
+//////////////////////////////////////////////////////20200905/////////////////////////////////////////////////////////
+//https://www.codewars.com/kata/55afed09237df73343000042
+function isLucky(n) {
+  n = n + '';
+  let sum = 0;
+  for (let i = 0; i < n.length; i++){
+    sum += +n[i];
+  }
+  return (sum % 9 === 0 || sum === 0) ? true : false;
+}
 
