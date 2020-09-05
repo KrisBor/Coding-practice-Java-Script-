@@ -427,3 +427,21 @@ function minAndMax(a, b, c){
   }
   return [min, max];
 }
+//////////////////////////////////////////////////////20200905/////////////////////////////////////////////////////////
+//Сумма двух наибольших чисел.
+function sumOfTwoLargest(a, b, c){
+  let arr = [a, b, c];
+  let arrSum = [];
+  let least = arr[0];
+  for (let elm of arr) {
+    if (elm < least){
+      least = elm;
+    }
+  }
+  for (let elm of arr){
+    if (elm > least){
+      arrSum.unshift(elm);
+    }
+  }
+  return arrSum[0] + arrSum[1];
+}
