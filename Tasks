@@ -451,4 +451,23 @@ function newValues(a, b, c){
   if (b > a  && c > b) return [a * 2, b * 2, c * 2];
   else return [-a, -b, -c];
 }
-//
+//Найти порядковый номер величины, отличающейся от двух других
+function orderNumberOfDifferentValue(a, b, c){
+  if (a !== b && a !== c) return 1;
+  if (b !== a && b !== c) return 2;
+  if (c !== a && c !== b) return 3;
+}
+//У какой фигуры площадь больше?
+function areaComparison(r, a){
+  let circleS = Math.PI * Math.pow(r, 2);
+  let squareS = Math.pow(a, 2);
+  return (circleS > squareS) ? 'circle' : (squareS > circleS ) ? 'square' : 'the same';
+}
+// Какая точка ближе к началу координат?
+function distanceComparison(x1, y1, x2, y2){
+  if (Math.abs(Math.pow(x1, 2)) + Math.abs(Math.pow(y1, 2)) < Math.abs(Math.pow(x2, 2)) + Math.abs(Math.pow(y2, 2)))
+  return 1;
+  else if (Math.abs(Math.pow(x1, 2)) + Math.abs(Math.pow(y1,2)) > Math.abs(Math.pow(x2, 2)) + Math.abs(Math.pow(y2, 2)))
+  return 2;
+  else return 0;
+}
