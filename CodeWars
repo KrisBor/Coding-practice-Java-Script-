@@ -155,3 +155,9 @@ function rps(p1, p2) {
   if (p1 === p2) return 'Draw!';
   else return `Player 2 won!`;
 };
+//https://www.codewars.com/kata/568dcc3c7f12767a62000038
+function setAlarm(employed, vacation){
+  if (employed === false) return false;
+  if (vacation === true) return false;
+  else return true;
+}
