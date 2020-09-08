@@ -483,3 +483,24 @@ function ascendingOrDescendingOrder(num){
 function triangle(a, b, c) {
   return (a + b > c && b + c > a && c + a > b) ? 'The triangle exists' : 'The triangle does not exist';
 }
+//Дан номер месяца (число от 1 до 12). Получить время года (зима, весна, лето, осень).
+function season(month){
+  switch (month) {
+    case 1:
+    case 2:
+    case 12:
+    return 'Winter';
+    break;
+    case 3:
+    case 4:
+    case 5:
+    return 'Spring';
+    break;
+    case 6:
+    case 7:
+    case 8:
+    return 'Summer';
+    break;
+    default: return 'Fall';
+  }
+}
