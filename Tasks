@@ -504,3 +504,11 @@ function season(month){
     default: return 'Fall';
   }
 }
+//True, если радуга содержит этот цвет, и false в противном случае.
+function rainbowСolor(color){
+  let arr = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+  for (let i = 0; i < arr.length; i++){
+    if (color === arr[i]) return true;
+  }
+  return false;
+}
