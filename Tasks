@@ -479,3 +479,7 @@ function ascendingOrDescendingOrder(num){
   if (num[0] > num[1] && num[1] > num[2]) return 'descending order';
   else return 'no order';
 }
+//Существует ли треугольник со сторонами a, b, c?
+function triangle(a, b, c) {
+  return (a + b > c && b + c > a && c + a > b) ? 'The triangle exists' : 'The triangle does not exist';
+}
