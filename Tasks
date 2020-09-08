@@ -512,3 +512,11 @@ function rainbowСolor(color){
   }
   return false;
 }
+//Счастливые числа в Японии 8, 3, 5, 7
+function luckyNumber(a, b){
+  let arr = [8, 3, 5, 7];
+  for (let i = 0; i < arr.length; i ++){
+    if (a === arr[i] || b === arr[i]) return true;
+  }
+  return false;
+}
