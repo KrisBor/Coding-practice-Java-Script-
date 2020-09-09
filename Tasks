@@ -524,3 +524,10 @@ function luckyNumber(a, b){
 function pythagoreanThree(a, b, c){
   return (a ** 2 + b ** 2 === c ** 2 || b ** 2 + c ** 2 === a ** 2 || c ** 2 + a ** 2 === b ** 2) ? true : false;
 }
+//////////////////////////////////////////////////////20200909/////////////////////////////////////////////////////////
+//Если a не равно b
+function newValues(a, b){
+  let newNumber = Math.max(a, b);
+  return (a !== b) ? [newNumber, newNumber] : [0, 0];
+}
+//
