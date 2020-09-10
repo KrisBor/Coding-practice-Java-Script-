@@ -536,3 +536,8 @@ function newValues(a, b){
 function scoreIncrease(current, level){
   return (level === 'easy') ? current + 2 : (level === 'medium') ? current + 4 : current + 8;
 }
+//Торговец фруктов продает манго по 1 доллару за штуку. Если берет 3 и больше, то за 1 фрукт торговец просит 0.8$.
+//Если покупают 10 штук и более, то продавец готов продать их всего по 60 центов за штуку.
+function saleFruits(n){
+  return (n >= 10) ? (n * 0.6).toFixed(2) : (n >= 3) ? (n * 0.8).toFixed(2) : (n * 1).toFixed(2);
+}
