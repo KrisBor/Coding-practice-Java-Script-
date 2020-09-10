@@ -530,4 +530,9 @@ function newValues(a, b){
   let newNumber = Math.max(a, b);
   return (a !== b) ? [newNumber, newNumber] : [0, 0];
 }
-//
+//////////////////////////////////////////////////////20200910/////////////////////////////////////////////////////////
+//За решение задачи уровня "easy" начисляется 2 балла, за решение задачи уровня "medium" начисляется 4 балла,
+//за решение задачи уровня "hard" начисляется 8 баллов.
+function scoreIncrease(current, level){
+  return (level === 'easy') ? current + 2 : (level === 'medium') ? current + 4 : current + 8;
+}
