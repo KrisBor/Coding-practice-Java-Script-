@@ -199,6 +199,7 @@ return respond
 //https://www.codewars.com/kata/56f3f6a82010832b02000f38
 const describeAge = a => a<13 ? 'You\'re a(n) kid' : a<18 ? 'You\'re a(n) teenager' : a<65 ? 'You\'re a(n) adult'
 : 'You\'re a(n) elderly';
+
 //https://www.codewars.com/kata/525e5a1cb735154b320002c8
 function triangular(n){
   let sum = 0;
