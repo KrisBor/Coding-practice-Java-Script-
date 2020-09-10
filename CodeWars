@@ -196,3 +196,6 @@ function howManyDalmatians(number){
 
 return respond
 }
+//https://www.codewars.com/kata/56f3f6a82010832b02000f38
+const describeAge = a => a<13 ? `You're a(n) kid` : a<18 ? `You're a(n) teenager` :
+  a<65 ? `You're a(n) adult` : `You're a(n) elderly`;
