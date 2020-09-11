@@ -541,3 +541,24 @@ function scoreIncrease(current, level){
 function saleFruits(n){
   return (n >= 10) ? (n * 0.6).toFixed(2) : (n >= 3) ? (n * 0.8).toFixed(2) : (n * 1).toFixed(2);
 }
+//////////////////////////////////////////////////////20200911/////////////////////////////////////////////////////////
+//Приветствие на разных языках
+function greetings(name, language){
+  switch(name, language){
+    case 'English': return `Hello ${name}!`;
+    break;
+    case 'German': return `Hallo ${name}!`;
+    break;
+    case 'French': return `Bonjour ${name}!`;
+    break;
+    case 'Spanish': return `Hola ${name}!`;
+    break;
+    case 'Italian': return `Saluto ${name}!`;
+    break;
+    case 'Russian': return `Привет ${name}!`;
+    break;
+    case 'Czech': return `Nazdar ${name}!`;
+    break;
+    default: return `Hello ${name}!`;
+  }
+}
