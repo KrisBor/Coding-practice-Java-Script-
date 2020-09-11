@@ -562,3 +562,18 @@ function greetings(name, language){
     default: return `Hello ${name}!`;
   }
 }
+//Арифметические операции
+function calculate(a, b, operation){
+  switch(operation){
+    case '+': return `${a} ${operation} ${b} = ${Math.round(a + b)}`;
+    break;
+    case '-': return `${a} ${operation} ${b} = ${Math.round(a - b)}`;
+    break;
+    case '*': return `${a} ${operation} ${b} = ${Math.round(a * b)}`;
+    break;
+    case '/': return `${a} ${operation} ${b} = ${Math.round(a / b)}`;
+    break;
+    case '%': return `${a} ${operation} ${b} = ${Math.round(a % b)}`;
+    break;
+  }
+}
