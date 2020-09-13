@@ -577,3 +577,25 @@ function calculate(a, b, operation){
     break;
   }
 }
+//////////////////////////////////////////////////////20200913/////////////////////////////////////////////////////////
+//Дано целое число k (от 1 до 365). Если считать, что 1 января был понедельник. Какой это день недели?
+function dayOfWeek(k){
+  for (let i = k; i >= 0; i -= 7){
+    switch(i){
+      case 0: return 'Sunday';
+      break;
+      case 1: return 'Monday';
+      break;
+      case 2: return 'Tuesday';
+      break;
+      case 3: return 'Wednesday';
+      break;
+      case 4: return 'Thursday';
+      break;
+      case 5: return 'Friday';
+      break;
+      case 6: return 'Saturday';
+      break;
+    }
+  }
+}
