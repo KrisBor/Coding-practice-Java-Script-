@@ -610,3 +610,12 @@ function quotientAndRemainder(n, k){
   remainder = n;
   return [quotient, remainder];
 }
+//Является ли число степенью 3?
+function powerOf3(n){
+  for (let i = 0; i < n; i++){
+    while(3 ** i === n){
+    return true;
+    }
+  }
+  return false;
+}
