@@ -599,3 +599,14 @@ function dayOfWeek(k){
     }
   }
 }
+//https://app.pasv.us/course/5d1cbf67086fc30038bf1859
+function quotientAndRemainder(n, k){
+  let quotient = 0;
+  let remainder = 0;
+  while (n >= k){
+    n = n - k;
+    remainder = n;
+    quotient++;
+  }
+  return [quotient, remainder];
+}
