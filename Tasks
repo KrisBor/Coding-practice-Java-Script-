@@ -599,7 +599,7 @@ function dayOfWeek(k){
     }
   }
 }
-//https://app.pasv.us/course/5d1cbf67086fc30038bf1859
+//Найти частное и остаток от деления без использования операций деления и нахождения остатка
 function quotientAndRemainder(n, k){
   let quotient = 0;
   let remainder = 0;
