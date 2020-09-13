@@ -605,8 +605,8 @@ function quotientAndRemainder(n, k){
   let remainder = 0;
   while (n >= k){
     n = n - k;
-    remainder = n;
     quotient++;
   }
+  remainder = n;
   return [quotient, remainder];
 }
