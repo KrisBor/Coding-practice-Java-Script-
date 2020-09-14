@@ -628,3 +628,13 @@ function powerOf2(n){
     }
   }
 }
+//Сумма чисел от 1 до n.
+function sum(n){
+let sumNumber = 0;
+let i = 0;
+  while (i <= n){
+    sumNumber = sumNumber + i;
+    i++;
+  }
+  return sumNumber;
+}
