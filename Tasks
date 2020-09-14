@@ -658,3 +658,14 @@ function sumOfOdd(n){
   }
   return sum;
 }
+//Произведение четных чисел от 1 до n.
+function multOfEven(n){
+  let sum = 1;
+  let i = 2;
+  while(i <= n){
+    sum = sum * i;
+    i += 2;
+  }
+  return sum;
+}
+//
