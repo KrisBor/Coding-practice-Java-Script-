@@ -638,3 +638,13 @@ let i = 0;
   }
   return sumNumber;
 }
+//Найдите факториал числа n
+function factorial(n){
+  let factorialNumber = 1;
+  let i = 1;
+  while(i <= n){
+    factorialNumber = factorialNumber * i;
+    i++;
+  }
+  return factorialNumber;
+}
