@@ -679,3 +679,12 @@ function sumOfDigits(n){
   }
   return sum;
 }
+//Сколько цифр содержит число? Запрещено использовать методы и свойства строк и массивов.
+function numberOfDigits(n){
+  let count = 0;
+  while(n > 1){
+    n /= 10;
+    count++;
+  }
+  return count;
+}
