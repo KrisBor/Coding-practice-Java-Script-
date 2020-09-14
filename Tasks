@@ -668,4 +668,14 @@ function multOfEven(n){
   }
   return sum;
 }
-//
+//Сумма цифр числа n
+function sumOfDigits(n){
+  n = n + '';
+  let sum = 0;
+  let i = 0;
+  while(i < n.length){
+    sum = sum + +n[i];
+    i++
+  }
+  return sum;
+}
