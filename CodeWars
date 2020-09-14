@@ -267,3 +267,15 @@ function differenceOfSquares(n){
   }
   return (squareSum ** 2) - sumSquares;
 }
+//https://www.codewars.com/kata/563f037412e5ada593000114
+function calculateYears(principal, interest, tax, desired) {
+  let count = 0;
+  let resTax = 0;
+  let res = 0;
+  while(principal < desired) {
+    resTax = principal * interest * tax;
+    principal = (principal * (interest + 1)) - resTax;
+    count++;
+  }
+  return count;
+}
