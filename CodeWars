@@ -250,3 +250,20 @@ function calculator(a,b,sign){
       default: return 'unknown value';
   }
 }
+//////////////////////////////////////////////////////20200914/////////////////////////////////////////////////////////
+//https://www.codewars.com/kata/558f9f51e85b46e9fa000025
+function differenceOfSquares(n){
+  let squareSum = 0;
+  let sumSquares = 0;
+  let i = 1;
+  let j = 1;
+  while(i <= n){
+    squareSum += i;
+    i++;
+  }
+  while (j <= n){
+    sumSquares += j ** 2;
+    j++;
+  }
+  return (squareSum ** 2) - sumSquares;
+}
