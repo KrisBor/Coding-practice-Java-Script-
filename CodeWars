@@ -288,3 +288,16 @@ function largestPower(n){
     }
   return k - 1;
 }
+//https://www.codewars.com/kata/58c9322bedb4235468000019
+function isVeryEvenNumber(n) {
+  let sumNum;
+  while ( n >= 10) {
+    n = n + '';
+    sumNum = 0;
+    for(let elm of n){
+      sumNum = sumNum + +elm;
+    }
+    n = sumNum;
+  }
+  return (n % 2 === 0) ? true : false;
+}
