@@ -308,3 +308,15 @@ function noBoringZeros(n) {
   }
   return n;
 }
+//////////////////////////////////////////////////////20201011/////////////////////////////////////////////////////////
+function movie(card, ticket, perc) {
+  let count = 0;
+  let systemA = 0;
+  let systemB = card;
+  while (!(Math.ceil(systemB) < systemA)) {
+    count++;
+    systemB += ticket * Math.pow(perc, count);
+    systemA += ticket;
+  }
+  return count;
+};
