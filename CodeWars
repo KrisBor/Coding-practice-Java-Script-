@@ -309,6 +309,7 @@ function noBoringZeros(n) {
   return n;
 }
 //////////////////////////////////////////////////////20201011/////////////////////////////////////////////////////////
+//https://www.codewars.com/kata/562f91ff6a8b77dfe900006e/solutions/javascript
 function movie(card, ticket, perc) {
   let count = 0;
   let systemA = 0;
