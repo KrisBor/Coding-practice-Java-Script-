@@ -710,5 +710,5 @@ function isPrime(n){
     count++;
     }
   }
-  return (count > 2) ? false : true;
+  return (count > 2) ? false : (count === 1) ? false : true;
 }
