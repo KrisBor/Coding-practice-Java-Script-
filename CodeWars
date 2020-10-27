@@ -345,3 +345,13 @@ function getDivisorsCnt(n){
   }
   return count;
 }
+//https://www.codewars.com/kata/544aed4c4a30184e960010f4
+function divisors(integer) {
+  let arrayDivisors = [];
+  for (let i = 2; i <= integer / 2; i++){
+    if (integer % i === 0) {
+      arrayDivisors.push(i);
+    }
+  }
+  return (arrayDivisors.length === 0 ) ? `${integer} is prime` : arrayDivisors;
+};
