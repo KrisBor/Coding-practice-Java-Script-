@@ -721,3 +721,12 @@ function power(a, n){
   }
   return (n === 0) ? 1 : res;
 }
+//////////////////////////////////////////////////////20201027/////////////////////////////////////////////////////////
+//Последовательность Фибоначчи
+function fibonacciNumbers(n){
+  let arrayFibNum = [0, 1];
+  for (let i = 2; i < n; i++){
+    arrayFibNum[i] = arrayFibNum[i - 1] + arrayFibNum[i - 2];
+  }
+  return (n === 0) ? [0] : (n === 1) ? [0, 1] : arrayFibNum;
+}
