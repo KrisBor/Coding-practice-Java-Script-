@@ -355,8 +355,8 @@ function divisors(integer) {
   }
   return (arrayDivisors.length === 0 ) ? `${integer} is prime` : arrayDivisors;
 };
-
-//
+//////////////////////////////////////////////////////20201028/////////////////////////////////////////////////////////
+//https://www.codewars.com/kata/555eded1ad94b00403000071
 function SeriesSum(n) {
   let sumNth = 1;
   let divider = 4;
