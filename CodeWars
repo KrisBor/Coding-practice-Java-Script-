@@ -410,3 +410,11 @@ function sumMul(n,m){
   }
   return (n > m || n === 0) ? "INVALID" : sum;
 }
+//https://www.codewars.com/kata/5866e26f2e8d9cdbcd0003d7
+function factorial(x){
+  let product = 1;
+  for (let i = x; i > 0; i--){
+    product *= i;
+  }
+  return (x <= 1) ? 1 : (x > 21) ? 0 : product;
+}
