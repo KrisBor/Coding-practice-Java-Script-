@@ -418,3 +418,20 @@ function factorial(x){
   }
   return (x <= 1) ? 1 : (x > 21) ? 0 : product;
 }
+//////////////////////////////////////////////////////20201112/////////////////////////////////////////////////////////
+//https://www.codewars.com/kata/5b4e779c578c6a898e0005c5
+function drawStairs(n) {
+  let str = '';
+  for (let i = 0; i <= n; i++){
+    for (let j = 1; j < i; j++){
+      str = str + ' ';
+    }
+    if (i > 0 && i < n){
+      str += 'I\n';
+    }
+    if (i === n){
+      str += 'I';
+    }
+  }
+  return str;
+}
