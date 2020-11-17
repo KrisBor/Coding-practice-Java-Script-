@@ -425,7 +425,7 @@ function drawStairs(n) {
   for (let i = 0; i <= n; i++){
     for (let j = 1; j < i; j++){
       str = str + ' ';
-    }
+    }elm
     if (i > 0 && i < n){
       str += 'I\n';
     }
@@ -434,4 +434,13 @@ function drawStairs(n) {
     }
   }
   return str;
+}
+//////////////////////////////////////////////////////20201117/////////////////////////////////////////////////////////
+//https://www.codewars.com/kata/5f7b1a82be51af00105c82bd
+ function divBy9(ns){
+   let sum = 0;
+   for (let elm of ns){
+     sum = sum + +elm
+   }
+   return (sum % 9 === 0) ? true : false;
 }
