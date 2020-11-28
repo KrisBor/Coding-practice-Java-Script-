@@ -769,3 +769,13 @@ function bankPercent(p){
   } while (deposit < 1500);
 return years;
 }
+//Вкладчик положил некоторое количество денег в банк. Ежегодно эта сумма увеличивается на percent (percent > 0)
+//процентов от текущей суммы вклада. Определите, какая сумма денег будет на счету через period лет?
+function bankPercent(money, percent, period){
+let count = 0;
+  do {
+    money = money + (money * percent / 100);
+    count++;
+  } while (count < period);
+return money.toFixed(2);
+}
