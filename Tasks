@@ -756,3 +756,16 @@ function running(n){
   } while (day < 10);
 return Math.round(runningOneDay);
 }
+//////////////////////////////////////////////////////20201128/////////////////////////////////////////////////////////
+//Вкладчик положил 1000 долларов в банк. Ежегодно эта сумма увеличивается на p (p > 0) % от начальной суммы вклада.
+//Через сколько лет на счету будет 1500 долларов?
+function bankPercent(p){
+  let deposit = 1000;
+  let years = 0;
+  let percentage = deposit * p / 100;
+  do {
+    deposit += percentage;
+    years++
+  } while (deposit < 1500);
+return years;
+}
