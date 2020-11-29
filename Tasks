@@ -795,3 +795,16 @@ function invertNumber(n){
 return newNumber / 10;
 }
 console.log(invertNumber(123))
+//Дано целое положительное число. Получите массив его цифр, записанных в обратном порядке
+//Запрещено использование методов split, reverse
+function arrayOfDigits(n){
+  let number = 0;
+  let arrNumber = [];
+  do {
+    number = n % 10;
+    arrNumber.push(number);
+    n -= number;
+    n /= 10;
+  }while (n > 0);
+return arrNumber;
+}
