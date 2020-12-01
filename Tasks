@@ -819,3 +819,15 @@ function doesNumberContain2(n){
   }while (number !== 2 && n > 0)
   return (number === 2) ? true : false;
 }
+//
+function evenDigits(n){
+  let oneNumber = 0;
+  let arrNumber = [];
+  do {
+    oneNumber = n % 10;
+    arrNumber.unshift(oneNumber);
+    n -= oneNumber;
+    n /= 10;
+  } while (n > 0);
+return arrNumber;
+}

@@ -444,3 +444,13 @@ function drawStairs(n) {
    }
    return (sum % 9 === 0) ? true : false;
 }
+//////////////////////////////////////////////////////20201201/////////////////////////////////////////////////////////
+//https://www.codewars.com/kata/562926c855ca9fdc4800005b
+function numberToPower(number, power){
+  let raisedToNumber = 1;
+  do {
+    raisedToNumber *= number;
+    power--;
+  } while (power > 0);
+  return (power === -1) ? 1 : raisedToNumber;
+}
