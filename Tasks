@@ -808,3 +808,14 @@ function arrayOfDigits(n){
   }while (n > 0);
 return arrNumber;
 }
+//////////////////////////////////////////////////////20201201/////////////////////////////////////////////////////////
+//Содержит ли число цифру "2"? Запрещено использование методов строк и массивов.
+function doesNumberContain2(n){
+  let number = 0;
+  do {
+    number = n % 10;
+    n -= number
+    n /= 10;
+  }while (number !== 2 && n > 0)
+  return (number === 2) ? true : false;
+}
