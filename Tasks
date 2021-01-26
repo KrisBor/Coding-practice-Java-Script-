@@ -831,3 +831,22 @@ function evenDigits(n){
   } while (n > 0);
 return arrNumber;
 }
+//////////////////////////////////////////////////////20210126/////////////////////////////////////////////////////////
+//Создать массив из четных цифр из числа
+function evenDigits(n){
+let num = 0;
+let arr = [];
+let evenArr = [];
+  do {
+    num = n % 10;
+    n -= num;
+    n /= 10;
+    arr.unshift(num);
+  } while (n > 0);
+  for (let elm of arr) {
+    if (elm % 2 === 0) {
+      evenArr.push(elm);
+    }
+  }
+return evenArr
+}
