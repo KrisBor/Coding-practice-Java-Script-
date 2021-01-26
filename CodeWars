@@ -454,3 +454,13 @@ function numberToPower(number, power){
   } while (power > 0);
   return (power === -1) ? 1 : raisedToNumber;
 }
+//////////////////////////////////////////////////////20210127/////////////////////////////////////////////////////////
+//https://www.codewars.com/kata/562926c855ca9fdc4800005b
+function numberToPower(number, power){
+  let newNum = 1;
+  do {
+    newNum *= number;
+    power -= 1;
+  } while (power > 0);
+  return (power === 0) ? newNum : 1;
+}
