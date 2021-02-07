@@ -850,3 +850,16 @@ let evenArr = [];
   }
 return evenArr
 }
+//////////////////////////////////////////////////////20210207/////////////////////////////////////////////////////////
+//Определите, содержит ли массив заданное значение.
+function isElementIncluded(arr, x){
+  let result;
+  for (let elm of arr) {
+    if (elm === x) {
+      result = true;
+      break;
+    } else result = false;
+  }
+  return result;
+}
+console.log(isElementIncluded([19,7,18], 12))
