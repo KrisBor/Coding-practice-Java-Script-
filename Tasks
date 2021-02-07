@@ -889,3 +889,15 @@ function firstEvenElement(arr){
   return arrayEvenNumber;
 }
 console.log(firstEvenElement([4,3,14,12,9]));
+//Получить массив из четных чисел от 2 до n, за исключением чисел, кратных 3.
+function fillArray(n){
+  let arrayEvenNumber = [];
+  for (let i = 0; i <= n; i += 2){
+    if (i % 3 === 0){
+      continue;
+    }
+    arrayEvenNumber.push(i);
+  }
+  return arrayEvenNumber;
+}
+console.log(fillArray(10));
