@@ -863,3 +863,15 @@ function isElementIncluded(arr, x){
   return result;
 }
 console.log(isElementIncluded([19,7,18], 12))
+//Получить массив из целых чисел от 1 до n, за исключением данного числа x.
+function fillArray(n, x){
+  let arr = [];
+  for (i = 1; i <= n; i++){
+    if (i === x){
+    continue;
+    }
+    arr.push(i);
+  }
+  return arr;
+}
+console.log(fillArray(5, 2))
