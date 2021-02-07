@@ -862,7 +862,7 @@ function isElementIncluded(arr, x){
   }
   return result;
 }
-console.log(isElementIncluded([19,7,18], 12))
+console.log(isElementIncluded([19,7,18], 12));
 //Получить массив из целых чисел от 1 до n, за исключением данного числа x.
 function fillArray(n, x){
   let arr = [];
@@ -874,4 +874,18 @@ function fillArray(n, x){
   }
   return arr;
 }
-console.log(fillArray(5, 2))
+console.log(fillArray(5, 2));
+//Найдите в массиве первый четный элемент и его индекс
+function firstEvenElement(arr){
+  let arrayEvenNumber = [];
+  for (let i = 0; i <= arr.length; i++) {
+    if (arr[i] % 2 === 0) {
+      arrayEvenNumber.push (arr[i], i);
+      break;
+    } else {
+      arrayEvenNumber;
+      }
+  }
+  return arrayEvenNumber;
+}
+console.log(firstEvenElement([4,3,14,12,9]));
