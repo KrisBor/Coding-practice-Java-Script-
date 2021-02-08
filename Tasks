@@ -901,3 +901,34 @@ function fillArray(n){
   return arrayEvenNumber;
 }
 console.log(fillArray(10));
+//////////////////////////////////////////////////////20210208/////////////////////////////////////////////////////////
+//Содержит ли строка данный символ?
+function iSymbInString(str, symb){
+  let result;
+  for (let i = 0; i < str.length; i++){
+    if (str[i] === symb){
+      result = true;
+      break;
+    } else {
+        result = false;
+      }
+  }
+  return result;
+}
+console.log(iSymbInString("abc0!$%^&*()-=/+,.", "r"));
+//Определите, есть ли в массиве отрицательный элемент.
+function isNegativeInArray(arr){
+  let result;
+  let i = 0;
+  while (i <= arr.length) {
+    if (arr[i] < 0) {
+      result = true;
+      break;
+    } else {
+        result = false;
+      }
+    i++;
+  }
+  return result;
+}
+console.log(isNegativeInArray([0,3,7,6,2,6,-1,8,4]));
