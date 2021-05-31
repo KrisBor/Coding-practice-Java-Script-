@@ -1,10 +1,9 @@
 //https://www.codewars.com/kata/55685cd7ad70877c23000102
-
 function makeNegative(num) {
   if(num > 0) return -num;
   else return num;
 };
-//////////////////////////////////////////////////////20200817/////////////////////////////////////////////////////////
+
 //https://www.codewars.com/kata/534ea96ebb17181947000ada
 function breakChocolate(n,m) {
   return (n * m > 0) ? n * m - 1 : 0;
@@ -26,7 +25,7 @@ function past(h, m, s){
 function angle(n) {
   return 2 * 90 * (n - 2);
 };
-//////////////////////////////////////////////////////20200818/////////////////////////////////////////////////////////
+
 //https://www.codewars.com/kata/588417e576933b0ec9000045
 function seatsInTheater(nCols, nRows, col, row) {
   let numberCol = nCols - col + 1;
@@ -39,7 +38,7 @@ function arrowArea(a,b) {
   let h = b / 2;
   return 0.5 * a * h;
 };
-//////////////////////////////////////////////////////20200823/////////////////////////////////////////////////////////
+
 //https://www.codewars.com/kata/55a5bfaa756cfede78000026
 function problem(x){
   return (typeof x === 'number') ? x * 50 + 6 : 'Error';
@@ -61,12 +60,12 @@ a = a.toString();
 function booleanToString(b){
   return b.toString();
 };
-//////////////////////////////////////////////////////20200825/////////////////////////////////////////////////////////
+
 //https://www.codewars.com/kata/552564a82142d701f5001228
 function discoverOriginalPrice(discountedPrice, salePercentage){
   return +(discountedPrice * 100 / (100 - salePercentage)).toFixed(2)
 };
-//////////////////////////////////////////////////////20200826/////////////////////////////////////////////////////////
+
 //https://www.codewars.com/kata/5748838ce2fab90b86001b1a
 function squareArea(A){
   let circleLength = A * 4;
@@ -77,17 +76,17 @@ function squareArea(A){
 function oddCount(n){
   return Math.round((n - 1) / 2);
 };
-//////////////////////////////////////////////////////20200827/////////////////////////////////////////////////////////
+
 //https://www.codewars.com/kata/5a3fe3dde1ce0e8ed6000097
 function century(year) {
   return Math.ceil(year / 100);
 };
-//////////////////////////////////////////////////////20200828/////////////////////////////////////////////////////////
+
 //https://www.codewars.com/kata/58249d08b81f70a2fc0001a4
 const closestMultiple10 = num => {
   return Math.round(num / 10) * 10;
 };
-//////////////////////////////////////////////////////20200830/////////////////////////////////////////////////////////
+
 //https://www.codewars.com/kata/571f832f07363d295d001ba8
 function trueOrFalse(val){
   if (Boolean(val) === false) return false + '';
@@ -103,7 +102,7 @@ function hero(bullets, dragons){
   if (bullets >= dragons * 2) return true;
   else return false;
 };
-//////////////////////////////////////////////////////20200905/////////////////////////////////////////////////////////
+
 //https://www.codewars.com/kata/55afed09237df73343000042
 function isLucky(n) {
   n = n + '';
@@ -122,7 +121,7 @@ function getGrade (s1, s2, s3) {
   if (score >= 60 && score < 70) return 'D';
   if (score >= 0 && score < 60) return 'F';
 };
-//////////////////////////////////////////////////////20200906/////////////////////////////////////////////////////////
+
 //https://www.codewars.com/kata/57158fb92ad763bb180004e7
 function rainAmount(mm){
     if (mm < 40) return `You need to give your plant ${40 - mm}mm of water`;
@@ -140,7 +139,7 @@ function apple(x){
   if (x ** 2 > 1000) return 'It\'s hotter than the sun!!';
   else return 'Help yourself to a honeycomb Yorkie for the glovebox.';
 };
-//////////////////////////////////////////////////////20200908/////////////////////////////////////////////////////////
+
 //https://www.codewars.com/kata/57e921d8b36340f1fd000059
 function shark(pontoonDistance, sharkDistance, youSpeed, sharkSpeed, dolphin){
   if (dolphin === true && pontoonDistance / youSpeed < sharkDistance / (sharkSpeed / 2)) return 'Alive!';
@@ -179,14 +178,14 @@ function getAges(sum,difference){
   if (sum < 0 || difference < 0 || oldest < 0 || youngest < 0) return null;
   else return [oldest, youngest];
 };
-//////////////////////////////////////////////////////20200909/////////////////////////////////////////////////////////
+
 //https://www.codewars.com/kata/56d6c333c9ae3fc32800070f
 function yearDays(year){
   if (year % 4 === 0 && year % 100 !== 0) return `${year} has 366 days`;
   if (year % 400 === 0) return `${year} has 366 days`;
   else return `${year} has 365 days`;
 };
-//////////////////////////////////////////////////////20200910/////////////////////////////////////////////////////////
+
 //https://www.codewars.com/kata/56f6919a6b88de18ff000b36
 function howManyDalmatians(number){
 
@@ -208,7 +207,7 @@ function triangular(n){
   }
   return (n < 0) ? 0 : sum;
 };
-//////////////////////////////////////////////////////20200913/////////////////////////////////////////////////////////
+
 //https://www.codewars.com/kata/572059afc2f4612825000d8a
 function howManydays(month){
   var days;
@@ -250,7 +249,7 @@ function calculator(a,b,sign){
       default: return 'unknown value';
   }
 };
-//////////////////////////////////////////////////////20200914/////////////////////////////////////////////////////////
+
 //https://www.codewars.com/kata/558f9f51e85b46e9fa000025
 function differenceOfSquares(n){
   let squareSum = 0;
@@ -279,7 +278,7 @@ function calculateYears(principal, interest, tax, desired) {
   }
   return count;
 };
-//////////////////////////////////////////////////////20200915/////////////////////////////////////////////////////////
+
 //https://www.codewars.com/kata/57be674b93687de78c0001d9
 function largestPower(n){
   let k = 0;
@@ -308,7 +307,7 @@ function noBoringZeros(n) {
   }
   return n;
 };
-//////////////////////////////////////////////////////20201011/////////////////////////////////////////////////////////
+
 //https://www.codewars.com/kata/562f91ff6a8b77dfe900006e
 function movie(card, ticket, perc) {
   let count = 0;
@@ -321,7 +320,7 @@ function movie(card, ticket, perc) {
   }
   return count;
 };
-//////////////////////////////////////////////////////20201018/////////////////////////////////////////////////////////
+
 //https://www.codewars.com/kata/5b0d67c1cb35dfa10b0022c7
 function squaresNeeded(grains){
   let sum = 0;
@@ -334,7 +333,7 @@ function squaresNeeded(grains){
   }
   return count;
 };
-//////////////////////////////////////////////////////20201027/////////////////////////////////////////////////////////
+
 //https://www.codewars.com/kata/542c0f198e077084c0000c2e
 function getDivisorsCnt(n){
   let count = 1;
@@ -355,7 +354,7 @@ function divisors(integer) {
   }
   return (arrayDivisors.length === 0 ) ? `${integer} is prime` : arrayDivisors;
 };
-//////////////////////////////////////////////////////20201028/////////////////////////////////////////////////////////
+
 //https://www.codewars.com/kata/555eded1ad94b00403000071
 function SeriesSum(n) {
   let sumNth = 1;
@@ -384,7 +383,7 @@ function getSum(a, b) {
   }
    return sum;
 };
-//////////////////////////////////////////////////////20201028/////////////////////////////////////////////////////////
+
 //https://www.codewars.com/kata/5721a78c283129e416000999
 function pickIt(arr){
   var odd=[],even=[];
@@ -418,7 +417,7 @@ function factorial(x){
   }
   return (x <= 1) ? 1 : (x > 21) ? 0 : product;
 }
-//////////////////////////////////////////////////////20201112/////////////////////////////////////////////////////////
+
 //https://www.codewars.com/kata/5b4e779c578c6a898e0005c5
 function drawStairs(n) {
   let str = '';
@@ -435,7 +434,7 @@ function drawStairs(n) {
   }
   return str;
 }
-//////////////////////////////////////////////////////20201117/////////////////////////////////////////////////////////
+
 //https://www.codewars.com/kata/5f7b1a82be51af00105c82bd
  function divBy9(ns){
    let sum = 0;
@@ -444,7 +443,7 @@ function drawStairs(n) {
    }
    return (sum % 9 === 0) ? true : false;
 }
-//////////////////////////////////////////////////////20201201/////////////////////////////////////////////////////////
+
 //https://www.codewars.com/kata/562926c855ca9fdc4800005b
 function numberToPower(number, power){
   let raisedToNumber = 1;
@@ -454,7 +453,7 @@ function numberToPower(number, power){
   } while (power > 0);
   return (power === -1) ? 1 : raisedToNumber;
 }
-//////////////////////////////////////////////////////20210127/////////////////////////////////////////////////////////
+
 //https://www.codewars.com/kata/562926c855ca9fdc4800005b
 function numberToPower(number, power){
   let newNum = 1;
@@ -464,7 +463,7 @@ function numberToPower(number, power){
   } while (power > 0);
   return (power === 0) ? newNum : 1;
 }
-//////////////////////////////////////////////////////20210128/////////////////////////////////////////////////////////
+
 //https://www.codewars.com/kata/57216d4bcdd71175d6000560
 function padIt(str,n){
   do {
@@ -475,7 +474,7 @@ function padIt(str,n){
   } while (n > 0);
   return str;
 }
-//////////////////////////////////////////////////////20210207/////////////////////////////////////////////////////////
+
 //https://www.codewars.com/kata/5a58d46cfd56cb4e8600009d
 function halvingSum(n) {
     let divisor = n;
@@ -485,7 +484,7 @@ function halvingSum(n) {
     } while (divisor > 0);
   return n;
 }
-//////////////////////////////////////////////////////20210520/////////////////////////////////////////////////////////
+
 //https://www.codewars.com/kata/5721c189cdd71194c1000b9b
 function grabDoll(dolls){
   var bag=[];
